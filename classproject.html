@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my project</title>
+    <link rel="Stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    background-size: cover;
+    background: url(bag.jpeg);
+    background-position: center;
+    font-family: sans-serif;
+}
+.Menu-Bar
+{
+background-color:green;
+text-align: center;
+}
+.Menu-Bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: antiquewhite;
+}
+.Menu-Bar ul li
+{
+    width: 120px;
+    margin: 20px;
+    padding: 20px;
+}
+.Menu-Bar ul li a
+{
+    text-decoration:none;
+    color: antiquewhite;
+}
+.active,.Menu-Bar ul li:hover
+{
+    background:#2bab0d;
+    border-radius:3px;
+}
+.Menu-Bar .fa
+{
+    margin-right: 4px;
+}
+.sub-menu-1 
+{
+    display:none;
+}
+.Menu-Bar ul li:hover .sub-menu-1
+{
+    display:block;
+    position:absolute;
+    background:rgb(0,100,0);
+    margin-top:15px;
+    margin-left:-15px;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom:1px double #fff;
+    background:transparent;
+    text-align:left;
+    border-radius: 0;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.Menu-Bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:#b2ff00;
+}
+
+</style>
+</head>
+<body>
+    <div class="Menu-Bar">
+   <ul>
+    <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a>
+    </li>
+    <li><a href="#"><i class="fa fa-user"></i>AboutUs</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">Misiion</a></li>
+                <li><a href="#">Vision</a><i class="fa fa-angle-right"></i></li>
+                
+            </ul>
+                </div>
+    </li>
+    <li><a href="#"><i class="fa fa-clone"></i>Service</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#">App Devolopment</a><i class="fa fa-angle-right"></i></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Web Devolopment</a><i class="fa fa-angle-right"></i></li>
+            </ul>
+                </div>
+    <li><a href="#"><i class="fa fa-users"></i>Clients</a>
+    </li>
+    </li>
+    </li>
+    <li><a href="#"><i class="fa fa-phone"></i>Contact</a>
+    </li>
+   </ul> 
+</div>
+</body>
+</html>
